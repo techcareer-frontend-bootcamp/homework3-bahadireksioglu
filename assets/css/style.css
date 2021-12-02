@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 /*=============== Varibles sass ===============*/
 /********** Font weight **********/
+/********* Font Size **********/
 /********** Colors **********/
 /********** Z-index **********/
 /********** Variables CSS **********/
@@ -28,7 +29,8 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration: none;
   margin: 0;
   padding: 0;
@@ -39,11 +41,16 @@ html {
 }
 
 body {
-  margin: 3rem 0 0 0;
+  margin: 0;
   font-family: var(--body-font);
   background-color: #f4f4f6;
   color: #1d1d1f;
   overflow: auto;
+}
+
+.max-width {
+  max-width: 1200px;
+  margin: auto;
 }
 
 ul {
@@ -60,3 +67,67 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+header {
+  background-color: #f4f4f6;
+  border-bottom: 0.1rem solid gray;
+}
+
+header .nav {
+  padding: 0.4rem 0;
+}
+
+header .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .nav-menu a {
+  color: #1d1d1f;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+header .nav-menu .menu-logo a {
+  font-size: 1.3rem;
+}
+
+header .nav-menu ul {
+  display: inline-block;
+}
+
+header .nav-menu li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+header .nav-menu .compare-btn {
+  display: inline-block;
+  background-color: #1d1d1f;
+  color: #fff;
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+header .nav-menu .menu-btn {
+  display: none;
+}
+
+footer {
+  background-color: aliceblue;
+}
+
+footer .container {
+  margin-left: 15px;
+}
+/*# sourceMappingURL=style.css.map */
