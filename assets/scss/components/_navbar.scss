@@ -1,0 +1,44 @@
+header{
+    background-color: $body-color;
+    border-bottom: 0.1rem solid $border-color;
+    .nav{
+        padding: 0.4rem 0;
+        
+        &-menu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            a{
+                color: $first-color;
+                font-size: $font-small;
+                font-weight: $font-semibold;                      
+            }
+            .menu-logo{
+                a{
+                    font-size: $font-medium;                
+                }
+            }
+            ul{
+                display: inline-block;
+            }
+            li{
+                display: inline-block;
+                margin-left: 1rem;
+            }
+            .compare-btn{
+                display: inline-block;
+                background-color: $first-color;
+                color: $white-color;
+                border-radius: 2rem;
+                padding: 0.4rem 1rem;
+                margin-left: 1rem;
+                font-size: $font-small;
+                font-weight: $font-bold;
+            }
+            .menu-btn{
+                display: none
+            }
+        }
+    }
+}
+
