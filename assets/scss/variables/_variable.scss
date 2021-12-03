@@ -11,11 +11,13 @@ $body-color: #f4f4f6;
 $first-color: #1d1d1f;
 $second-color: #0071e3;
 $white-color: #fff;
+$third-color: #b8b8b8;
 $border-color: gray;
 $section-light: #f0f0f0;
 
 /********** Z-index **********/
-$z-fixed: 100; 
+$z-fixed: 100;
+$z-middle: 50; 
 
 /********** Variables CSS **********/
 
@@ -27,6 +29,7 @@ $z-fixed: 100;
   --biggest-font-size: 3rem;
   --bigger-font-size: 2rem;
   --big-font-size: 1.25rem;
+  --semibig-font-size: 1.16rem;
   --normal-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 

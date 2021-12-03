@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 /*=============== Varibles sass ===============*/
 /********** Font weight **********/
-/********* Font Size **********/
 /********** Colors **********/
 /********** Z-index **********/
 /********** Variables CSS **********/
@@ -12,6 +11,7 @@
   --biggest-font-size: 3rem;
   --bigger-font-size: 2rem;
   --big-font-size: 1.25rem;
+  --semibig-font-size: 1.16rem;
   --normal-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 }
@@ -68,16 +68,96 @@ img {
   height: auto;
 }
 
+.container {
+  max-width: 1280px;
+}
+
 header {
   background-color: #f4f4f6;
-  border-bottom: 0.1rem solid gray;
+  width: 100vw;
+  height: 3rem;
+  -webkit-box-shadow: 0 4px 4px #1d1d1d0d;
+          box-shadow: 0 4px 4px #1d1d1d0d;
 }
 
-header .nav {
-  padding: 0.4rem 0;
+header .container {
+  margin: auto;
 }
 
-header .nav-menu {
+header .container .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 1.2rem;
+}
+
+header .container .nav-logo a {
+  color: #1d1d1f;
+  font-size: var(--semibig-font-size);
+  font-weight: 700;
+}
+
+header .container .nav-menu ul {
+  display: inline-block;
+}
+
+header .container .nav-menu ul li {
+  display: inline-block;
+  margin-right: 0.8rem;
+}
+
+header .container .nav-menu ul li a {
+  color: #1d1d1f;
+}
+
+header .container .nav-menu .toggle-btn {
+  display: none;
+  margin-right: 0.8rem;
+}
+
+header .container .nav-menu #compare {
+  display: inline-block;
+  font-size: var(--normal-font-size);
+  font-weight: 700;
+  background-color: #1d1d1f;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  border-radius: 1.6rem;
+}
+
+@media screen and (max-width: 960px) {
+  header .container .nav-menu .toggle-btn {
+    display: inline-block;
+  }
+  header .container .nav-menu ul {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    background-color: #b8b8b8;
+  }
+  header .container .nav-menu ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main .container {
+  margin: auto;
+}
+
+main .container .sub-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,45 +169,8 @@ header .nav-menu {
           justify-content: space-between;
 }
 
-header .nav-menu a {
-  color: #1d1d1f;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-header .nav-menu .menu-logo a {
-  font-size: 1.3rem;
-}
-
-header .nav-menu ul {
-  display: inline-block;
-}
-
-header .nav-menu li {
-  display: inline-block;
-  margin-left: 1rem;
-}
-
-header .nav-menu .compare-btn {
-  display: inline-block;
-  background-color: #1d1d1f;
-  color: #fff;
-  border-radius: 2rem;
-  padding: 0.4rem 1rem;
-  margin-left: 1rem;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-header .nav-menu .menu-btn {
-  display: none;
-}
-
-footer {
-  background-color: aliceblue;
-}
-
-footer .container {
-  margin-left: 15px;
+main .container .sub-menu-item {
+  margin: auto;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

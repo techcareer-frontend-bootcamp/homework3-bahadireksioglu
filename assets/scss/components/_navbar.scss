@@ -1,0 +1,75 @@
+header{
+    background-color: $body-color;
+    width: 100vw;
+    height: $header-height;
+    box-shadow: 0 4px 4px #1d1d1d0d;
+    .container{
+        margin:auto;
+
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem 1.2rem;
+
+            &-logo{
+                a{
+                    color: $first-color;
+                    font-size: var(--semibig-font-size);
+                    font-weight: $font-bold;
+                }
+            }
+    
+            &-menu{
+                ul{
+                    display: inline-block;
+                    
+                    li{
+                        display: inline-block;
+                        margin-right: 0.8rem;
+                        
+                        a{
+                            color: $first-color;
+                        }
+                    }
+                }
+                .toggle-btn{
+                    display: none;
+                    margin-right: 0.8rem;
+                }
+
+                #compare{
+                    display: inline-block;
+                    font-size: var(--normal-font-size);
+                    font-weight: $font-bold;
+                    background-color: $first-color;
+                    color: $white-color;
+                    padding: 0.4rem 1rem;
+                    border-radius: 1.6rem;
+                }
+
+                @media screen and (max-width: 960px) {
+                    .toggle-btn{
+                        display: inline-block;
+                    }
+
+                    ul{
+                        display: block;
+                        position: absolute;
+                        top: $header-height;
+                        left: 0;
+                        width: 100%;
+                        background-color: $third-color;
+                        li{
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 768px){
+              
+        }
+    }  
+}
