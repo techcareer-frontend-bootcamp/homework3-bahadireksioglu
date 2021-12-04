@@ -317,21 +317,24 @@ main .container .features .content .left .features-cards {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
   width: 100%;
+  padding-top: 2rem;
 }
 
-main .container .features .content .left .features-cards .features-cards {
+main .container .features .content .left .features-cards .features-card {
   width: 35%;
   word-wrap: break-word;
+  margin-bottom: 2rem;
 }
 
-main .container .features .content .left .features-cards .features-cards .features-card .big-text {
-  text-align: center;
-  font-size: var(--biggest-font-size);
+main .container .features .content .left .features-cards .features-card .big-text {
+  font-size: var(--bigger-font-size);
+  font-weight: 700;
 }
 
-main .container .features .content .left .features-cards .features-cards .features-card .small-text {
-  text-align: center;
+main .container .features .content .left .features-cards .features-card .small-text {
+  margin: 0 2rem 0 2rem;
 }
 
 main .container .features .content .right {

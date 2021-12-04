@@ -112,22 +112,23 @@ main{
                         flex-direction: column;
                         align-items: flex-end;
                         justify-content: center;
+                        text-align: center;
                         width: 100%;
-                        .features-cards{
+                        padding-top: 2rem;
+
+                        .features-card{
                             width: 35%;
                             word-wrap: break-word;
-
-                            .features-card{
-                                
-                                .big-text{
-                                    text-align: center;
-                                    font-size: var(--biggest-font-size);
-                                }
-                                .small-text{
-                                    text-align: center;
-                                }
+                            margin-bottom: 2rem;
+                            .big-text{                                   
+                                font-size: var(--bigger-font-size);
+                                font-weight: $font-bold;
                             }
-                        }   
+
+                            .small-text{
+                                 margin: 0 2rem 0 2rem;   
+                            }
+                        }                          
                     }
                 }
 
