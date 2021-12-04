@@ -5,7 +5,10 @@ const showMenu = (toggleId, navId) => {
 
     if(toggle && nav) {
         toggle.addEventListener('click', () => {
-            nav.classList.toggle('show')
+            if(nav.getElementsByTagName('ul')[0].style.display=="block")
+                nav.getElementsByTagName('ul')[0].style.display="none";
+            else
+                nav.getElementsByTagName('ul')[0].style.display="block"            
         })
     }
 }
@@ -13,13 +16,13 @@ const showMenu = (toggleId, navId) => {
 showMenu('nav-toggle', 'nav-menu')
 
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav__link')
-
+/*const navLink = document.querySelectorAll('.toogle-btn');
+console.log(navLink);
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
     // When we click on each nav__link, we remove the show-menu class
-    navMenu.classList.remove('show')
+    navMenu.style.display="none";
 }
 
-navLink.forEach(n => n.addEventListener('click', linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction))*/
 

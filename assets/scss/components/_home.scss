@@ -51,7 +51,8 @@ main{
                         }
 
                         .card-body{
-                            width: 62%;
+                            width: 400px;
+                            margin-left: 2rem;
                             p{           
                                 text-align: left;
                                 line-height: 1.5rem;
@@ -147,5 +148,75 @@ main{
                 }
             }
         }
+
+        @media screen and (max-width:960px) {
+            .show-case{
+                
+                .content {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .left{
+                        .card{
+                            margin-top: 6rem;
+                            margin-right: 0;
+                            
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            .card-title{
+                                width: 100%;
+                                text-align: center;
+                                
+                                h1{                               
+                                    font-size: var(--biggest-font-size);
+                                    margin-left: 2rem;
+                                }
+                            }
+    
+                            .card-body{
+                                width: 100%;                       
+                                p{           
+                                    text-align: center;
+                                    line-height: 1.5rem;
+                                }
+                            }
+                        }
+                    }  
+                }
+            }
+            .features{
+                height: 100vh;
+    
+                .content{
+                    
+                    .left{
+                        
+                        .features-cards{
+
+                            .features-card{
+                                width: 100%;
+                                
+                            }                          
+                        }
+                    }
+    
+                    .right{
+                        flex: 1;
+                        
+                        .feature-image{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            img{
+                                width: 300px;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }       
     }   
 }

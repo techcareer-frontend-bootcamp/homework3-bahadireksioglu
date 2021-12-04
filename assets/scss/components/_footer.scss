@@ -19,3 +19,12 @@ footer{
         }
     }
 }
+
+@media screen and (max-width:560px) {
+    footer{
+        .container{
+            flex-direction: column;
+            justify-content: center;
+        }
+    }        
+}
