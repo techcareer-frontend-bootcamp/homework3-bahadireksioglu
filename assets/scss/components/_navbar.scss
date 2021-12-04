@@ -3,6 +3,8 @@ header{
     width: 100vw;
     height: $header-height;
     box-shadow: 0 4px 4px #1d1d1d0d;
+    z-index: $z-fixed;
+    position:fixed;
     .container{
         margin:auto;
 
@@ -56,12 +58,16 @@ header{
                     ul{
                         display: block;
                         position: absolute;
+                        padding-top: 1rem;
                         top: $header-height;
                         left: 0;
                         width: 100%;
-                        background-color: $third-color;
+                        background-color: $white-color;
+                        color: $first-color;
+                        border-radius: 0 0 1.4rem 1.4rem;
                         li{
                             width: 100%;
+                            margin-bottom: 1rem;
                             text-align: center;
                         }
                     }

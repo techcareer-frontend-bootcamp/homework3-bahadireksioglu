@@ -1,0 +1,21 @@
+footer{
+    width: 100%;
+    box-shadow: 4px 0 4px #1d1d1d0d;
+    .container{
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.8rem 1.2rem;
+        p{
+            font-weight: $font-bold;
+        }
+
+        .social-media{
+            a{
+                margin-left: 0.8rem;
+                color: $first-color;
+            }
+        }
+    }
+}
